@@ -1,6 +1,9 @@
-let data = ""
+const programmingLanguages = ["JavaScript", "Python", "Java"];
+let data = "";
 
-for(let i = 1950; i < 2005; i++){
-    data += `<option value="${i}">${i}</option>`
+for (let i = 0; i < 3; i++) {
+  data += `<li>${programmingLanguages[i]}</li>`;
 }
-document.querySelector("select").innerHTML=data;
+const list = document.querySelector("ul");
+
+list.innerHTML = data;
